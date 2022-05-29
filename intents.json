@@ -1,0 +1,85 @@
+{"intents": [
+  {"tag": "greetings",
+    "patterns": ["hello", "hey", "hi", "good day", "greetings", "what's up", "how is it going", "bot", "robot", "specter", "hi friend", "hi my friend"],
+    "responses": ["Hello, How are you?", "Greetings Sir, How are you?", "Hey Friend How are you?"]},
+
+  {"tag": "fine",
+    "patterns": ["im fine thanks", "fine", "thank you", "im ok"],
+    "responses": ["Good to hear that, What can I do for you?"]},
+
+    {"tag": "fine2",
+    "patterns": ["im fine how are you", "fine how about you", "thanks how are you", "im ok how about you"],
+    "responses": ["Im good friend, What can I do for you?"]},
+
+  {"tag": "shop",
+    "patterns": ["i want buy something", "help me buy these", "i wanna buy","i want to shop", "i want to buy", "lets buy", "lets go shopping"],
+    "responses": ["what do you want?", "what can i get for you?", "what do you need?"]},
+
+  {"tag": "goodbye",
+    "patterns": ["bye", "goodbye", "see you later", "cya", "leave", "have a good day", "cao", "khodafez", "see you","thank you bye", "thanks bye", "thanks goodbye", "thank you goodbye"],
+    "responses": ["Bye!", "Come Back Soon!", "GoodBye Friend!", "See you later:)", "Sad to see you go:(", "Dar panahe hagh:)"]},
+
+  {"tag": "age",
+    "patterns": ["how old are you", "what is your age", "how old", "age", "tell me your age"],
+    "responses": ["Ask my developer:)", "I'm one month old:)", "Never ask a lady how old she is"]},
+
+  {"tag": "name",
+    "patterns": ["what is your name", "what's your name", "what should i call you", "can you tell me your name", "name", "tell me your name"],
+    "responses": ["You can call me Specter", "I'm Specter", "My name is Specter"]},
+
+  {"tag": "identify",
+    "patterns": ["who are you", "who", "introduce yourself", "who am i talking to", "tell me about your self"],
+    "responses": ["I'm Specter, a intelligent AI ChatBot that can help you with your shopping list"]},
+
+  {"tag": "hours",
+    "patterns": ["when can i talk to you", "when can i call you", "hours"],
+    "responses": ["Everytime you wish!", "Everytime you want", "Anytime", "24/7", "I'm here for you everytime you need help"]},
+
+  {"tag": "tomato",
+    "patterns": ["i need tomato", "i want tomato", "tomato", "get me some tomato", "buy tomato"],
+    "responses": ["how much?"]},
+
+  {"tag": "potato",
+    "patterns": ["i need potato", "i want potato", "potato", "get me some potato", "buy potato"],
+    "responses": ["how much?"]},
+
+  {"tag": "onion",
+    "patterns": ["i need onion", "i want onion", "onion", "get me some onion", "buy onion"],
+    "responses": ["how much?"]},
+
+  {"tag": "soda",
+    "patterns": ["i need soda", "i want soda", "soda", "get me some soda", "buy soda"],
+    "responses": ["how many?"]},
+
+  {"tag": "chips",
+    "patterns": ["i need chips", "i want chips", "chips", "get me some chips", "buy chips"],
+    "responses": ["how many?"]},
+
+  {"tag": "milk",
+    "patterns": ["i need milk", "i want milk", "milk", "get me some milk", "buy milk"],
+    "responses": ["how many?"]},
+
+  {"tag": "bread",
+    "patterns": ["i need bread", "i want bread", "bread", "get me some bread", "buy bread"],
+    "responses": ["how many?"]},
+
+  {"tag": "noodle",
+    "patterns": ["i need noodle", "i want noodle", "noodle", "get me some noodle", "buy noodle"],
+    "responses": ["how many?"]},
+
+  {"tag": "meat",
+    "patterns": ["i need meat", "i want meat", "meat", "get me some meat", "buy meat"],
+    "responses": ["how much?"]},
+
+  {"tag": "egg",
+    "patterns": ["i need egg", "i want egg", "egg", "get me some egg", "buy egg"],
+    "responses": ["how many?"]},
+
+  {"tag": "num",
+    "patterns": ["1","2","3","4","4","5","6","7","8","9","10","3 kg"],
+    "responses": ["ok, what else?", "ok, what else you want?","ok, you want anything else?"]},
+
+    {"tag": "exit shop",
+    "patterns": ["nothing", "nothing else", "thats it im done", "thats it", "that was all i want", "done"],
+    "responses": ["ok, will do:)"]}
+]}
