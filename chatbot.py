@@ -2,6 +2,7 @@ import random
 import json
 import time
 import torch
+
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
 
@@ -43,10 +44,25 @@ def get_response(msg):
     if prob.item() > 0.75:
         for intent in intents['intents']:
             if tag == intent["tag"]:
-                time.sleep(1)
+                time.sleep(0.5)
                 return random.choice(intent['responses'])
 
     return "Sorry I do not understand..."
+
+
+def get_list():
+    data={}
+    data['O1']=input("what do you need?\n")
+    data['N1']=input("how many?\n")
+    data['O2'] = input("what do you need?\n")
+    data['N2'] = input("how many?\n")
+    data['O3']=input("what do you need?\n")
+    data['N3']=input("how many?\n")
+    data['O4'] = input("what do you need?\n")
+    data['N4'] = input("how many?\n")
+    return (data)
+out=[]
+
 
 
 if __name__ == "__main__":
@@ -55,5 +71,21 @@ if __name__ == "__main__":
         sentence = input("You: ")
         if sentence == "quit":
             break
+
         resp = get_response(sentence)
         print("Bot:",resp)
+
+        if sentence == "shopping":
+            while True:
+                quit = input("Wanna go shopping? (Y to continue / N to quit)")
+                if quit.lower() == 'n':
+                    break
+
+                record = get_list()
+                out.append(record)
+
+            with open('list.json', 'w') as file:
+                json.dump(out, file, indent=2)
+
+            lists = json.loads(open('list.json').read())
+            print(lists)
