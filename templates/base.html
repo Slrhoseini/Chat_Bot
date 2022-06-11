@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+</head>
+<body>
+<div class="container">
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAObElEQVR4nO1beXhUVZb/3XqvqlJLKklVkVQVKbKRBQIhrCGAnURA1kZCG9RoaBaF7qFBkJmvW+hWcOxWpqe/huaztXt0FJ0RNcowg4CtowiKCRBI2EnSRQJJZa8staS2V+/OH0C2WpLKpt83/r4vf+Sdc88759x7zz3n3FfAD/j/DTKSwucmrw+VhYkOutzuJUKhsM5is68pvnbwjC/eeanr50lkooNut1snFomOW9uda8+U/7tlJPUDAMFICpeFiX4/e2rS0qNv7ArZ/czqeGmI+FhaWoGsL19aWoFMJGE/2bPt0fijb+wMyUhPXCpRiPaOpG73MaIOIALy4GPL54rlUjHmTEuGXqdS7PvD5otGY+PcnnwKKkgZE6FA5tQkyKUheGz53BDtWOWmuvr6d5qbm0NHUscRdQAFPX/8VJmL5yluGoxoMpmJPk6TRAT0SENDQ9dKYBliaDZ1sOW3jOB5ik9PlyE+aawAIAVuj2fPSOo4ojEgO2mjWhQh+B+3m5stlUnIpm25mDFn4l0i5WfodLoL93kfSN+wUsyy7/KUlyenxmLbzscRGiYFgBKdVjNzJPUccaxc8Gzz16cu0Lr6hvt/5tbW1rC+fPkrns95YuVOTw8+WtfQ8NeR1G1Et8B9tLZ01NptzrP3/m2gBE8qlcqOvny3b9VampvabwFoAABQfA6e3zmSug37FsicsmYsS9g8lUKWLSAklnooa7La4kOlkrrosSpde5utzuVwOXyNdfF8iKXTrtOqI+pUkWHautrmz01m21cc5QqLLr1jHG5dgWF0wLzJ+RHqMOVf7G5Pbs6C6cykGclEqVKAFbKDkse5OZhaOnC1pJye/PKCRyJkPza1t/78myvvtQ2XzsAwOSAj7alolVRYunBZpvrpDcsgqW4CrWkBtdoBDz84oYwARC4B0avRGRuJf3vzE5w8cd7UZHWkn738Ru1w6A0EcEBeXh5TWx76hFAq2cS7uAmU0hC/QniPeOuzeYJVahX4b64DnGe49LsLloHggVR83NSCV/cXUp4InJQS6lMXQhxEKLzusdleHzvBeqiwsDCgMj4dkJH2VLRIxH4m1mn02sWL5NKEWDAikU8BrcdPYAJvxs7EWFBDQ9C2BQOSoMVLNw24yUZAtWyxTx6Py4VOQxXqj39mdTY23OFcnQ8Fih9eDshOXxvuYcVXNMuWaDRLFwXcwLzbhVu//DXeXLsM6oq6oA0aDJoTtXjq4HEk7P0tiFAYkLfx2Ke09YuTrRE6ZVJh4e5WXzxeBrqZkN+rZk0f05/xANBZXYNxmgioK72Np6AwmG2o73TAA5+r1S8YQqCVhCBBIQPpM0dj/l6P6MgI2KrvQJ6YEFBO1LLFhDOZVAkhjhs1NS3T9Hq110roZWRaWoGM8NyTY1flivtTkuc4dFy+gtlyGfraV9LShgOV1aBCBnHRUWCY4NINj8eDqooqwM1ha2IsZqgjuokUSFDIcO7yFcjiY0EYJqCsqNyHcXbnbyKf3mz7orW1NaNv/tHLAXIPmxGi1znYUJnfgAcA5qvXUff2u6AOB8LH63vRTja04M+G29j1zGrMTBs/MIv94GxZJV4+UIjN3Dhka8Z0PVe6OZhPnoKluBi6tWugSJ3oVwYbKodcPxaG8trkSVMS9gDY1pPea2qogGpEKmVAl7ZfuIimt9/B3mcewaPL5wAurotmcrqwr9yAP+7eMGTjASAjPRF/eGED/lh+C61OdzfByeHR5XPwypZH0PjWQbSXlAaUI1RGoK3VAhBs7FmEAX0cIOCJkLCM36ORs9pgPPif2L+zAFNT4+4+5LvP+RPGRsyfOwVx+qiBW9kPEsZFISdzMk7U9Thh7r1z2qR47H+uAMZ3/gOcrdOvDMIw8HA8AEgopbN60oLanG3nSjBryngkxmp90m/YOjEj3ffM2x2ufuX745k1NQk3rXaftKQ4HWZMTkD7+ZJ+5QMAJaSX8kE5gDMakZ6o90u3cRwUcqnX85dfO4wFBXvwzwc+8jt2z58KsaBgD15+7b+8aIpQKSyc28eou5iarIfbOLDkkFDa6+wMLjwzAnAern++Pviy6CoA4Iuiy6DU+0iklOJk8ZV7vFeCls95PAAZXGEb1ChRTAzOX78d9EvWPfIgotTh2LB6PgjxDjGEEGzIm9/FEyzOXauGKDY26HGAj0QoEJSzZqL86DGUXDVgxqTASUhP5K+Yh/wV8wLyFORmoSA3Kxh1AADnrxhQaTRh/KYZgRl9lw7BrQAiZKFZ91Ps2l+IE6dLQfngKz1bpwOuHkeny8XB1umzPRAQlOdx/FQpfv2nQmjWrgEJUHbrF2ZjyvQkn7Sgi/XQ5ETot27BXz/6CKZyAwrio4Ma/+GJIrCMAAUr7872B8fOgON5rPtJTlBy3j3yNcJioqHfugXSGP+BGQCkmigownw7eVCRQxqjh37HdoxZOL9XFixnWZit/s9jAMhIS8ThT4tx7lIlzl2qxOG/FSMz3ffs3EeH2YZQtnuuKAD1wgcRt+tX/RoPAJWHPkbRKd/BdXDtmnsQqSJgKu8utyfIZTh3sQJZs1L9jpmYGI1t65fjrY9PAgC2b/gxUhLGBnzPuYuVmCDvTuBaPDzEKtWA9eQ5DpyfHsWQHCCOikSFrXtpLdFFYf23pchdkonxMRq/47JmpQZ0Uk9UVtfjVPFVvD1natezCqsdYs3wZJtD6gqHJiXhjsWKRrsTAKAUC7E9JR47XnwT314sH7JyZ0puYseLb+HZCfEIF93NXxrsDtRYrJAnDb3WAIa4AoiQhXpBDl4tK8WLk+7u4yyNGmEiFvtfP4J9AoL46EgIg2yMut0cDDWNCKHAbyaOR7qy+wrhQGUN1A/Nh4ANRibxmycNyQEAoF6yCJculOLQbSMej7m7l9OV4XhrdjqqrJ2o67TDHWRjVMiKoEtNQlyftPpQlRHXKEXc4oeCkhe7YjFm+ImzQ3YAIxZj3LYteP9f96Gm04mfjR8Hxb0Zj5NLvYwYDMxuDq9V3sEZuxOx/7QdAj/9SX+wN7XAEiWBzEebY8gOAACRSom4559DWeFhPHamBLMjVUiXS6EQDU282cWh1NqJs00mhM+aifjVq8CEBOzV+ERj8XncJDHQ6LxPjmFxAAAwEgm0a56AesVyGEovoby6GtRi7ZWB1l25ioz0ZAj69PkooSguLYdu8qQezwBEREA4NQbjp06BMNzrKnFYMGwOuA9heBjUOT8C8CMvWsPGX2DvL58A26dH6OF5ZD/+AjTP/MNwq9MvBuwAj92O5sLDaLtYBt7tuySmCHzV5PF4sHT973zSeJ7Htc3b/Y4NJJsRChE+LR1j8nLBSCQBNPDGgBxA3RyqXtqLbKkYedNSEOajH/9tYys+N7XjhYnxQSkwUOy5fgsLVeGYE6X0onW43fjgThW+fulfEL97V8DCqC8GxNn85WmksgTbk/3X3CEMA6GAILSfy4rBQiggCGEYn/JDhULsSIlH8+VyGE+eRuRDDw5Y7oAyQVdlBbKUIxOEhhM5qnC4KiuCGjMgBxC3GzI28AXE9wEylgFx+e8d+sLAaoGIcNTfy/e/z6i3O0EiwoMa08sBPOCinNurdxQ6czo+MDbBygXfEB0tWNxuvF/bCPks7++pqIcD62cF9wqCRMAbnU0tXom7InUiHJkZePJMERZr1Bgb4p2KVnZYB638QHHB1Aazj/a40eHCp/XNkD8wF4qJKV50V7MJ6kjfMayXA8LsirPmxmaRq60doj5LKXL1T9D8bRFoSjRu2rq3w+26JlSZXRCGhyHZah6UYQMBTwhOyxX4wtSBOIUIMbrILppcJoajsQUJeau8xrlb29DZ0ITxyfr7cnrdvvRywIm/H3DOnbbp1dr3P9wS//ONPm+If5qbjTBFd4Fz+G9n8f6tdoiTU4BPjg7Fxn6hzM6Cs/wmFsWHY9WijK7nHeZO/PepMp9jGj78CEsfzgQrvLsFCC+o6Un3CoK8uPV5y7UbVXUfFAJ0kN/3fA9AeR51hz6ExNyCvPyuhqvZZus435PPKxEqKiq0z5ucP4cxVJRV7n5pXHhWFmQJcWCkUlCeoqGlDTZ7dxusw2IDZ3dAYO6Ak+NR76PFLWVZhA2wMnTyHrQ6vPe5k+PhNneAszvQYbGhrrH7gw+LzQ7KUzibW+Dp7ITNUIX2r75CrF6Jf9y7DsJ776ag+xITE3sdZ35T95qaGknJ2YqyojM3kqpuNcBmtUMAQODjaw8PCCgAhuNA+lx9UR7wuNw4ktX/1661Njt2lN0AxzAgfS4yKCHwsCwIAMaHDjwIeAAyuQTxCRrkzE9H2rRebbNzToc9Ky4urtcMBfxM7vbt2xFCkfhdAMv61d4PrBY7Nue/gmM5GQH5brRb8KvL5Vi9biEWPZw52Nf5BAGOOhziNXFxEe19aQHXZUxMTBuA5cbGxoXgkU+AyQCNCDSmL3ieCgAa8OLumyYTXrlhwJadj2F6Rq9jrApeH+AMFKSNgF7mBeQ9XVTU//rlGpzwgSMzdYNSKhY0nZif6TMTOVbbiDfuGPHcy+sQn9h1P+ABJb/Q6aJeH2n9hr0hMlBQULxpqMVnbW14cd/PoI1W3yfZCOijWp3m2Gjo8Z04wM3z+N11A6pFBK+8tgWKsK5bnwZQfrm2x+8IRhqj7gA7x2Pn1QoIolX47e58iERd9b3BwwiW6CM1laOpz6g6wORw4dlLN5GSmYINWx+GQNAVgs4S0B/rIyObR1MfYJR+MAEA1RYbNpZcxswl0/H0tpXdxhMc8XDuHK1WO+rGA6O0AlycR7D5/FXu6R257Lyc9K7nBDigiYraRgj5znLuEV8BNsblJIS0qLXhq3oYTynoHq1Ws/W7NB4YhTzgPmpqapQMKzQBcIFgnU6jeW+03h0IoxYDhEKhEyC1BHTR98X4H/ADgP8DgIFKtE/4OU8AAAAASUVORK5CYII="/>
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">ChatBot</h4>
+<!--                    <p class="chatbox__description&#45;&#45;header">Hi. My name is Specter. How can I help you?</p>-->
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message...">
+                <button class="chatbox__send--footer send__button">Send</button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button><img src="https://img.icons8.com/color/48/000000/chat--v1.png" /></button>
+        </div>
+    </div>
+</div>
+
+    <script>
+        $SCRIPT_ROOT = {{ request.script_root|tojson }};
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+
+</body>
+</html>
